@@ -31,20 +31,20 @@ def form():
         cidade = row['city']
         data = row['date']
         populacao = row['estimated_population']
-        ultimo_confirm = row['last_available_confirmed']
+        total_confirm = row['last_available_confirmed']
         mortes = row['last_available_deaths']
         novas_mortes = row['new_deaths']
         novo_confirm = row['new_confirmed']
-        confirmado = row['new_confirmed']
+        
     return render_template("index.html",
                             cidade_pesq = request.form['cidade'].capitalize(),cidade = cidade,
                             data = data,
                             populacao = populacao,
-                            ultimo_confirm = ultimo_confirm,
+                            total_confirm = total_confirm,
                             mortes = mortes,
                             novas_mortes = novas_mortes,
                             novo_confirm = novo_confirm,
-                            confirmado = confirmado           )   
+                                      )   
 
 if __name__ == "__main__":
     app.run(debug=True)                            
