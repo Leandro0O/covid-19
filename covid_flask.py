@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html" methods=["GET","POST"])
 
 
-@app.route("/form", methods=["POST"])
+@app.route("/form", methods=["POST", "GET"])
 def form():
     user_agent = "seu-usuario"
     auth_token = "a835b732c90861eb8344542df051729da01deb05"
