@@ -1,1 +1,1 @@
-web: python covid_flask.py
+web: gunicorn covid_flask:app
