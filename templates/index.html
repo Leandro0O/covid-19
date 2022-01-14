@@ -14,8 +14,26 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <div class="container mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">COVID-19</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../templates/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../templates/sobre.html">Informações</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -130,11 +148,10 @@
   <footer class="navbar navbar-light bg-transparent ">
     <div class="container-fluid justify-content-center">
       <span class="navbar-text">
-        Navbar text with an inline element
+        Desenvolvido por Leandro Gonçalves - 2022
       </span>
     </div>
   </footer>
-
 
   <!--JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

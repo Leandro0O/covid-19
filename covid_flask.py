@@ -7,7 +7,7 @@ from covid_io import BrasilIO
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/templates/index.html")
 def index():
     return render_template("index.html" ,methods=["GET","POST"])
 
@@ -45,6 +45,10 @@ def form():
                             novas_mortes = novas_mortes,
                             novo_confirm = novo_confirm,
                                       )   
+
+@app.route("/templates/sobre.html")
+def sobre():
+    return render_template("sobre.html")
 
 if __name__ == "__main__":
     app.run(debug=True)                            
