@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -11,3 +12,12 @@ body{
 .btn{
     background-color:#6f42c1;
 }
+#btn-back-to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 1vh;
+    display: none;
+    border-radius: 30px;
+    background-color: #6f42c1 ;
+    color: white;
+  }
