@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <main class="container">
-    <div class="container mb-3">
+  <main class="container-fluid">
+    <div class="container-fluid mb-3">
       <nav class="navbar navbar-expand-lg navbar-dark  ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">COVID-19</a>
@@ -69,31 +69,27 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
+    <div class="container-fluid">
       <h3>Obtenha as ultimas informações sobre a COVID</h3>
+      <p class="card-text">Obtenha dados atualizadas diariamente.</p>
     </div>
+    <nav class="navbar navbar-light bg-transparent">
+      <div class="container-fluid ">
+        <form class="d-flex " action="/form" method="POST">
+          <div class="input-group mb-3">
+            <input type="date" class="form-control" placeholder="Data" name="dataaria-label=" data">
+            <span class="  btn input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="white" class="bi bi-calendar" viewBox="0 0 16 16">
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+              </svg></span>
+            <input type="search" class="form-control" name="cidade" placeholder="Cidade" aria-label="Server">
+            <button class="btn btn-secondary " type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </nav>
     <section class="container" id="bg">
-      <nav class="navbar navbar-light bg-transparent">
-        <div class="container-fluid ">
-          <form class="d-flex " action="/form" method="POST">
-            <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-5 mb-3">
-                <input type="date" name="data" class="form-control ">
-              </div>
-              <div class="col-lg-7 col-md-7 col-sm-7">
-                <div class="input-group mb-3 ">
-                  <input type="search" class="form-control" name="cidade" placeholder="Cidade"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn btn-secondary " type="submit" id="button-addon2"><i
-                      class="fas fa-search"></i></button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </nav>
-
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card text-center text-white bg-secondary h-100">
