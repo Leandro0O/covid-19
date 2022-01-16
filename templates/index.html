@@ -18,8 +18,8 @@
 
 <body>
   <main>
-    <div class="mb-3">
-      <nav class="navbar navbar-expand-lg navbar-dark  ">
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">COVID-19</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,6 +58,8 @@
           </div>
         </div>
       </nav>
+    </header>
+    <div class="container mb-3">
       <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -70,35 +72,45 @@
       </div>
     </div>
     <div class="container">
-      <h3>Obtenha as ultimas informações sobre a COVID</h3>
-      <p class="card-text">Os dados são atualizados diariamente.</p>
+      <h3 class="my-3">Obtenha as ultimas informações sobre a COVID-19</h3>
+      <p class="card-text">Todos os dados são atualizados diariamente.</p>
+    </div>
+
     </div>
     <nav class="navbar navbar-light bg-transparent">
-      <div class="container ">
-        <form class="d-flex " action="/form" method="POST">
-          <div class="input-group mb-3">
-            <input type="date" class="form-control" placeholder="Data" name="data"aria-label=" data">
-            <span class="  btn input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="white" class="bi bi-calendar" viewBox="0 0 16 16">
-                <path
-                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-              </svg></span>
-            <input type="search" class="form-control" name="cidade" placeholder="Cidade" aria-label="Server">
-            <button class="btn btn-secondary " type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
+      <div class="container">
+        <form action="/form" method="POST">
+          <h5 class="my-3">Faça uma busca:</h5>
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Cidade" aria-label="City" name="cidade"> 
+            </div>
+            
+            <div class="col-sm">
+              <div class="input-group">
+                <div class="input-group-text color"><i class="fas fa-calendar text-white"></i></div>
+                <input type="date" class="form-control" placeholder="data" name="data">
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn"><i class="fas fa-search text-white"></i></button>
+            </div>
           </div>
         </form>
       </div>
     </nav>
-    <section class="container" id="bg">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card text-center text-white bg-secondary h-100">
+    </div>
+    <section class="container bg" >
+      <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col ">
+          <div class="card  text-center text-white bg-secondary h-100">
             <div class="card-body">
               <h5 class="card-title">Cidade</h5>
               <hr>
               <p class="card-text">
               <h5>
-                {{cidade}}
+                {{cidade}} -
+                {{estado}}
               </h5>
               </p>
             </div>
@@ -111,7 +123,7 @@
               <hr>
               <p class="card-text">
               <h4>
-                {{populacao}}
+                {{populacao}} Habitantes
               </h4>
               </p>
             </div>
@@ -174,21 +186,22 @@
 
     <button type="button" class="btn  btn-sm btn-floating btn-lg" id="btn-back-to-top">
       <i class="fas fa-arrow-up"></i>
-  </button>
-  
-    <footer class="navbar navbar-light bg-transparent ">
-      <div class="container-fluid justify-content-center">
-        <span class="navbar-text">
-          Desenvolvido por Leandro Gonçalves - 2022
-        </span>
-      </div>
+    </button>
+
+    <div class="container justify-content-center">
+      <span class="navbar-text">
+        Desenvolvido por Leandro Gonçalves - 2022
+      </span>
+    </div>
     </footer>
+
+
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
-      <script src="../static/js/script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 
 </html>
