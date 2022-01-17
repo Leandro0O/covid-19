@@ -83,17 +83,18 @@
           <h5 class="my-3">Faça uma busca:</h5>
           <div class="row g-3">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Cidade" aria-label="City" name="cidade"> 
+              <input type="text" class="form-control" placeholder="Cidade" aria-label="City" name="cidade" required> 
             </div>
             
             <div class="col-sm">
               <div class="input-group">
                 <div class="input-group-text color"><i class="fas fa-calendar text-white"></i></div>
-                <input type="date" class="form-control" placeholder="data" name="data">
+                <input type="date" class="form-control" placeholder="data" name="data" required>
               </div>
             </div>
             <div class="col-auto">
               <button type="submit" class="btn"><i class="fas fa-search text-white"></i></button>
+            </div>
             </div>
           </div>
         </form>
@@ -123,7 +124,7 @@
               <hr>
               <p class="card-text">
               <h4>
-                {{populacao}} Habitantes
+                {{populacao}}
               </h4>
               </p>
             </div>

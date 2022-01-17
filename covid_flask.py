@@ -41,11 +41,11 @@ def form():
                            cidade_pesq=request.form['cidade'].capitalize(), cidade=cidade,
                            estado = estado,
                            data=data,
-                           populacao=populacao,
+                           populacao= f"{populacao} Habitantes",
                            total_confirm=total_confirm,
                            mortes=mortes,
                            novas_mortes=novas_mortes,
-                           novo_confirm=novo_confirm,
+                           novo_confirm=novo_confirm, 
                            )
 
 
