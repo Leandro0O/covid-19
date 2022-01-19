@@ -4,17 +4,21 @@ body{
     text-align: justify;
 }
 .navbar{
-    background-color:#6f42c1 ;
+    background-color:#9977da ;
+   
+}
+.dropdown-menu{
+    background-color: #b9a1e7; 
 }
 .color{
-    background-color:#6f42c1;
+    background-color:#9977da ;
 }
 .bg{
     background-image: url(https://previews.123rf.com/images/marinamandarina/marinamandarina1604/marinamandarina160400017/54627440-seamless-pattern-with-viruses-endless-texture-for-wallpaper-fill-web-page-background-surface-texture.jpg?fj=1);
     padding: 1vh;
 }
 .btn{
-    background-color:#6f42c1;
+    background-color:#9977da ;
 }
 #btn-back-to-top {
     position: fixed;
@@ -22,7 +26,7 @@ body{
     right: 1vh;
     display: none;
     border-radius: 30px;
-    background-color: #6f42c1 ;
+    background-color: #9977da ;
     color: white;
   }
 .glass{
