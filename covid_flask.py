@@ -38,8 +38,7 @@ def form():
         novas_mortes = row['new_deaths']
         novo_confirm = row['new_confirmed']
     return render_template("index.html",
-                           cidade_pesq=request.form['cidade'].capitalize(), cidade=cidade,
-                           estado = estado,
+                          cidade= f"{cidade} - {estado}",
                            data=data,
                            populacao= f"{populacao} Habitantes",
                            total_confirm=total_confirm,
