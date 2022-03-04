@@ -19,9 +19,15 @@
 
 <p>Foram utilizados para o desenvolvimento do sistema:
 
-  • Python
-  • HTML, CSS e JS
-  • Flask
-  • API: Brasil.io
+ <ul>
+  <li>Python</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+  <li>Flask</li>
+  <li> API: Brasil.io</li>
+
+</ul>
+ 
   
 </p>
