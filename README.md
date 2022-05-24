@@ -9,9 +9,11 @@
  
  <h3>Acesso</h3>
  
+ <h4>Infelizmente a ultima atualização disponivel sobre os casos ocorreu em 27/03/2022, sendo assim só serão exibidas informações até esta data.</h4> 
+ 
  <p>Atraves deste link é possivel acessar o sistema em funcionamento e realizar suas pesquisas:
 
-  https://covid-19-314159.herokuapp.com/
+  http://c0vid19.pythonanywhere.com/
 
 </p>
  
