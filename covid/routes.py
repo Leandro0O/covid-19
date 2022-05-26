@@ -29,7 +29,7 @@ def pesquisa():
         mortes = row['last_available_deaths']
         novas_mortes = row['new_deaths']
         novo_confirm = row['new_confirmed']
-    return render_template("index.html",
+    return render_template("pesquisa.html",
                           cidade= f"{cidade} - {estado}",
                            data=data,
                            populacao= f"{populacao} Habitantes",
@@ -38,7 +38,3 @@ def pesquisa():
                            novas_mortes=novas_mortes,
                            novo_confirm=novo_confirm, 
                            )
-
-@app.route('/informacoes')
-def informacoes():
-    return render_template('sobre.html', title='Informacões')
